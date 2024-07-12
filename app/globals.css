@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,20 +14,50 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+    
+  }
+}
+
+.section-wrapper {
+  position: relative;
+    /* z-index: 10; */
+  max-width: 1150px;
+  margin: auto;
+  padding: 6.6rem;
+  overflow: hidden;
+  
+  
+}
+
+.section-wrapperb {
+  position: relative;
+  /* z-index: 10; */
+  max-width: 1500px;
+  margin: auto;
+  padding: 6.6rem;
+  overflow: hidden;
+}
+
+.section-wrapperp {
+  /* z-index: 10; */
+  max-width: 1500px;
+  margin: auto;
+  padding: 6.6rem;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 7.2rem 2.4rem;
   }
 }
