@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import { SectionHeader } from '@/utils/SectionHeader';
 import { Reveal } from '@/utils/Reveal';
@@ -57,8 +59,8 @@ export default function Projects() {
       <SectionHeader title='Nucamp Projects' dir='l' />
       <div>
         <Reveal>
-          <div className='p-2'>
-            <p className='text-2xl text-pretty font-serif dark:text-antwhite'>While I was enrolled in Nucamp, we were expected to do projects along with the learning and I wanted showcase some of them. </p>
+          <div className='tablet:p-2'>
+            <p className='text-lg tablet:text-2xl text-pretty font-serif dark:text-antwhite'>While I was enrolled in Nucamp, we were expected to do projects along with the learning and I wanted showcase some of them. </p>
           </div>
         </Reveal>
         <div className='hidden tablet:grid laptop:grid laptop:grid-cols-2  '>
@@ -72,10 +74,12 @@ export default function Projects() {
                   imgSrc={p.img}
                 />
               </div>
-              <MobileList />
             </Reveal>
           ))}
-        </div>
+       </div>
+       <div className=' tablet:hidden'>
+        <MobileList />
+       </div>   
       </div>
     </section>
     </div>

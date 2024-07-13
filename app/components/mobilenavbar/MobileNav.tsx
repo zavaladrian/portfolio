@@ -2,10 +2,11 @@
 import { Dispatch, SetStateAction, useState } from "react";
 import {  motion } from "framer-motion";
 import { IconType } from "react-icons";
-import { FiHome} from "react-icons/fi";
 import { SiAboutdotme } from "react-icons/si"
 import { GrProjects, GrContactInfo  } from "react-icons/gr";
 import MobileSwitch from "./LightDarkMobile";
+import { AiOutlineVerticalAlignTop } from "react-icons/ai";
+
 
 
 
@@ -21,7 +22,7 @@ const FloatingBottomNav = () => {
       >
         <MenuButton setOpen={setOpen} open={open} />
         <div className="flex gap-6 px-6">
-          <Link text="Home" href="#" Icon={FiHome} />
+          <Link text="Top" href="#" Icon={AiOutlineVerticalAlignTop} />
           <Link text="About" href="#about" Icon={SiAboutdotme} />
           <Link text="Projects" href="#projects" Icon={GrProjects} />
           <Link text="Contact" href="#contact" Icon={GrContactInfo} />
@@ -57,36 +58,7 @@ const MenuButton = ({
       onClick={() => setOpen((pv) => !pv)}
       className="text-xl font-bold h-full bg-black text-white"
     >
-      
         <MobileSwitch />
-        {/* <AnimatePresence mode="wait">
-          {open ? (
-            <motion.span
-              key="icon-1"
-              className="block"
-              variants={iconVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              transition={{ duration: 0.125, ease: "linear" }}
-            >
-               <p>Dark</p>
-            </motion.span>
-          ) : (
-            <motion.span
-              key="icon-2"
-              className="block"
-              variants={iconVariants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              transition={{ duration: 0.125, ease: "linear" }}
-            >
-              <p>Light</p>
-            </motion.span>
-          )}
-        </AnimatePresence> */}
-      
     </div>
   );
 };
@@ -94,9 +66,5 @@ const MenuButton = ({
 
 export default FloatingBottomNav;
 
-const iconVariants = {
-  initial: { rotate: 180, opacity: 0 },
-  animate: { rotate: 0, opacity: 1 },
-  exit: { rotate: -180, opacity: 0 },
-};
+
 
