@@ -1,9 +1,5 @@
-import React from 'react';
-import { SectionHeader } from '@/utils/SectionHeader';
-import { Reveal } from '@/utils/Reveal';
+import React from 'react'
 
-import MobileList from './components/MobileList';
-import Card from './components/CardT';
 
 import backendImage from '@/public/backend.png';
 import nativeImage from '@/public/native.png';
@@ -50,34 +46,11 @@ const projects: Project[] = [
   },
 ];
 
-export default function Projects() {
+
+const MobileList = () => {
   return (
-    <div className='dark:bg-slate-800 dark:bg-none bg-gradient-to-l from-glacier to-antwhite'>
-    <section id='projects' className='section-wrapperp'>
-      <SectionHeader title='Nucamp Projects' dir='l' />
-      <div>
-        <Reveal>
-          <div className='p-2'>
-            <p className='text-2xl text-pretty font-serif dark:text-antwhite'>While I was enrolled in Nucamp, we were expected to do projects along with the learning and I wanted showcase some of them. </p>
-          </div>
-        </Reveal>
-        <div className='hidden tablet:grid laptop:grid laptop:grid-cols-2  '>
-          {projects.map((p) => (
-            <Reveal key={p.id}>
-              <div className='m-8'>
-                <Card
-                  title={p.title}
-                  libs={p.libs}
-                  description={p.description}
-                  imgSrc={p.img}
-                />
-              </div>
-              <MobileList />
-            </Reveal>
-          ))}
-        </div>
-      </div>
-    </section>
-    </div>
-  );
+    <div>MobileList</div>
+  )
 }
+
+export default MobileList

@@ -29,7 +29,7 @@ const Experience = () => {
          
         src={Resturant}
         alt='dumb pic'
-        className='h-auto  w-96 ml-10'/>
+        className='h-auto  w-96 ml-10 hidden tablet:block'/>
         </Link>
         </div>
     </div>

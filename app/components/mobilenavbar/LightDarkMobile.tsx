@@ -23,7 +23,7 @@ const MobileSwitch = () => {
 
   return (
     <div
-      className={`grid h-[55px] px-5 place-content-center transition-colors ${
+      className={`grid h-[55px] phone:px-2 place-content-center transition-colors ${
         theme === 'light' ? 'bg-rblue' : 'bg-mblue'
       }`}
     >

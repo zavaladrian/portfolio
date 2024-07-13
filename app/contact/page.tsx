@@ -23,12 +23,12 @@ const Contact = () => {
               href="https://www.linkedin.com"
               target="_blank"
               rel="nofollow"
-              className='hover:text-blue-700 hover:font-bold'
+              className='hover:text-blue-200 hover:font-bold text-rblue'
             >
               Linkedin
             </Link>{" "}
             or{" "}
-            <Link href="https://www.twitter.com" target="_blank" rel="nofollow" className='hover:text-rose-500 hover:font-bold'>
+            <Link href="https://www.twitter.com" target="_blank" rel="nofollow" className=' text-rose-500 hover:text-rose-200 hover:font-bold'>
               X
             </Link>{" "}
             if that&apos;s more your speed.
@@ -36,14 +36,14 @@ const Contact = () => {
             </Reveal>
             <Reveal width="100%">
           <Link href="mailto:adrian@adrianzavala.com">
-            <div className="flex items-center justify-center gap-[0.8rem] w-fit text-2xl font-semibold font-serif transition-[0.25s] duration-[color] m-auto hover:text-red-500 dark:text-antwhite dark:hover:text-rblue">
+            <div className="flex items-center justify-center gap-[0.8rem] w-fit text-xl laptop:text-2xl font-semibold font-serif transition-[0.25s] duration-[color] m-auto hover:text-red-500 dark:text-antwhite dark:hover:text-rblue">
               <AiFillMail size="2.4rem" />
               <span>adrian@adrianzavala.com</span>
             </div>
           </Link> 
           </Reveal>
           <Reveal width="100%">
-          <div className=' mx-60'>
+          <div className=' mx-16 tablet:mx-60'>
           <MyLinks />
           </div>
           </Reveal>

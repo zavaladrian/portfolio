@@ -13,7 +13,7 @@ const FloatingBottomNav = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className=" bg-white z-10 align-bottom left-8 justify-center fixed h-screen laptop:hidden tablet:left-48">
+    <div className=" bg-white z-10 align-bottom left-1 justify-center fixed h-screen laptop:hidden tablet:left-48">
       <motion.nav
         animate={open ? "open" : "closed"}
         initial="closed"
