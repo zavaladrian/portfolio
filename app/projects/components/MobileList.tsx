@@ -13,33 +13,33 @@ const MobileList = () => {
     <div className='px-2 py-12'>
         <div className='mx-auto'>
                 <Course title="Nucamp Site" >
-                    <p>
+                    
                     We built a site that included multiple pages with listed campsites along with reviews from fake users off a json server database that we also built. The site also included a log in feature that also registered and stored new users to the database, including new reviews to campsites. The libraries I used for this was Bootstrap and React.
-                    </p>
+                    
                     <Link href="https://github.com/zavaladrian/nucampsite" target="_blank" rel="nofollow">
                         <AiFillGithub size="2.4rem"  className="opacity-50  hover:text-rose-700 hover:opacity-100 mx-auto mt-2 " />
                     </Link>
                 </Course>
                 <Course title="Mobile Nucamp Site" >
-                    <p>
+                    
                     We built the same campsite site from earlier react course and created a mobile site for it. The libraries I used for this was React Native, Bootstrap, and Expo SDK.
-                    </p>
+                    
                     <Link href="https://github.com/zavaladrian/reactnative" target="_blank" rel="nofollow">
                         <AiFillGithub size="2.4rem"  className="opacity-50  hover:text-rose-700 hover:opacity-100 mx-auto mt-2 " />
                     </Link>
                 </Course>
                 <Course title="Nucamp Server" >
-                    <p>
+                    
                     We built a backend server to store data and integrate with our website. We learned how to authenticate users and some fundamentals of cybersecurity. Was introduced to Postman which allowed us to do some backend testing and in general, with building and using APIs. The libraries I used for this was Express, MongoDB, and NodeJs.
-                    </p>
+                    
                     <Link href="https://github.com/zavaladrian/nucampserver" target="_blank" rel="nofollow">
                         <AiFillGithub size="2.4rem"  className="opacity-50  hover:text-rose-700 hover:opacity-100 mx-auto mt-2 " />
                     </Link>
                 </Course>
                 <Course title="Anime Watchlist" >
-                    <p>
+                    
                     A Nucamp Honors Project that was optional towards the end of the course and using the knowledge from Nucamp provided. This site featured anime shows with descriptions and a filtered system. There was a watchlist on a separate page which you were able to add from the list provided on the homepage or enter your own with a form provided on the watchlist. Also had a login and member feature. The libraries I used for this was Framer Motion, Tailwind, and React.
-                    </p>
+                    
                     <Link href="https://github.com/zavaladrian/anime-watchlist" target="_blank" rel="nofollow">
                         <AiFillGithub size="2.4rem"  className="opacity-50  hover:text-rose-700 hover:opacity-100 mx-auto mt-2 " />
                     </Link>

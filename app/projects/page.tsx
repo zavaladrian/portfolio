@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'Nucamp Site',
-    libs: 'Java, Bootstrap, React',
+    libs: 'Bootstrap, React',
     description: 'We built a site that included multiple pages with listed campsites along with reviews from fake users off a json server database that we also built. The site also included a log in feature that also registered and stored new users to the database, including new reviews to campsites',
     img: reactImage.src,
   },
