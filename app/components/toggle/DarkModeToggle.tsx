@@ -25,11 +25,11 @@ const DarkModeToggle: React.FC<DarkModeToggleProps> = ({ theme = "light", setThe
           ? "justify-end from-blue-500 to-sky-300"
           : "justify-start from-indigo-600 to-indigo-400"
       }`}
-      initial={{ opacity: 0, y: -12 }}
+      initial={{ opacity: 0, y: -52 }}
       animate={{
         opacity: 1,
-        y: 550,
-        x:10,
+        y: 0,
+        x:0,
         transition: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
       }}
       exit={{ opacity: 0, y: -50 }}

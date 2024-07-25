@@ -9,7 +9,6 @@ import { AiOutlineVerticalAlignTop } from "react-icons/ai";
 
 
 
-
 const FloatingBottomNav = () => {
   const [open, setOpen] = useState(false);
 
