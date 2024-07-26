@@ -26,7 +26,7 @@ const LINKS = [
 
 export const SimpleFloatingNav = () => {
   return (
-    <nav className="fixed left-[50%] top-8 laptop:flex w-fit -translate-x-[50%] items-center gap-6 rounded-2xl border-[1px] border-neutral-700 bg-glacier dark:bg-rblue p-2 text-lg text-neutral-900 z-30 hidden ">
+    <nav className="fixed left-[50%] top-8  w-fit -translate-x-[50%] items-center gap-6 rounded-2xl border-[1px] border-neutral-700 bg-glacier dark:bg-lavender p-2 text-lg text-neutral-900 z-30 hidden laptop:flex font-serif ">
      {LINKS.map((l, idx) => {
         return(
             <Link href={l.href} key={l.title} >
@@ -39,7 +39,6 @@ export const SimpleFloatingNav = () => {
     </nav>
   );
 };
-
 
 
 const ContactButton = () => {
