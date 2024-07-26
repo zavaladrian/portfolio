@@ -31,9 +31,6 @@ const config: Config = {
       'glacier': '#BDD3C7',
       'rblue': '#3961EE',
     },
-    fontFamily: {
-         
-    }
     },
   },
   plugins: [],

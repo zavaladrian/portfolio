@@ -5,8 +5,13 @@ import ThemeProvider from "./components/theme-provider";
 
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Adrian Zavala Portfolio",
   description: "Portfolio Profile",
+=======
+  title: "Adrian Zavala",
+  description: "Portfolio",
+>>>>>>> bb46ff80b6c39de673accfb54e257c42cd3d610e
 };
 
 type RootLayoutProps = any;
