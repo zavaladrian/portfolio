@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export const MyLinks = () => {
   return (
-    <div className="flex gap-[1.6rem] pt-2.5 relative ">
+    <div className="flex gap-[1.6rem] pt-2.5 relative dark:text-antwhite text-black ">
       <motion.span
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
