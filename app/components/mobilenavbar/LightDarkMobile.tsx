@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
-const TOGGLE_CLASSES = 'text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10';
+const TOGGLE_CLASSES = ' rounded-tl-md rounded-bl-md text-sm font-medium flex items-center gap-2 px-3 md:pl-3 md:pr-3.5 py-3 md:py-1.5 transition-colors relative z-10 ';
 
 const MobileSwitch = () => {
   const { theme, setTheme } = useTheme();
@@ -23,7 +23,7 @@ const MobileSwitch = () => {
 
   return (
     <div
-      className={`grid h-[55px] phone:px-2 place-content-center transition-colors ${
+      className={`grid h-[55px] phone:px-2 place-content-center rounded-tl-md rounded-bl-md transition-colors ${
         theme === 'light' ? 'bg-rblue' : 'bg-mblue'
       }`}
     >
@@ -53,7 +53,7 @@ const SliderToggle = ({
         className={`${TOGGLE_CLASSES} ${isLight ? 'text-black' : 'text-white'}`}
         onClick={() => setTheme(oppositeTheme)}
       >
-        {isLight ? <FiMoon className="relative z-10 text-lg md:text-sm" /> : <FiSun className="relative z-10 text-lg md:text-sm" />}
+        {isLight ? <FiMoon className="relative z-10 text-lg md:text-sm " /> : <FiSun className="relative z-10 text-lg md:text-sm" />}
         <span className="relative z-10">
           {isLight ? 'Dark Mode' : 'Light Mode'}
         </span>

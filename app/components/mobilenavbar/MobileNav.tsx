@@ -13,11 +13,11 @@ const FloatingBottomNav = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className=" bg-glacier dark:bg-lavender z-30 align-bottom left-1 justify-center fixed h-screen laptop:hidden tablet:left-48">
+    <div className=" bg-glacier dark:bg-lavender z-30 align-top left-1 justify-center fixed h-screen laptop:hidden tablet:left-48">
       <motion.nav
         animate={open ? "open" : "closed"}
         initial="closed"
-        className="bg-glacier dark:bg-lavender  text-black shadow-lg flex items-center justify-between absolute bottom-8"
+        className="bg-glacier dark:bg-lavender  text-black shadow-lg flex items-center justify-between absolute top-8 rounded-md"
       >
         <MenuButton setOpen={setOpen} open={open} />
         <div className="flex gap-6 px-6">
@@ -55,7 +55,7 @@ const MenuButton = ({
   return (
     <div
       onClick={() => setOpen((pv) => !pv)}
-      className="text-xl font-bold h-full bg-black text-white"
+      className="text-xl font-bold h-full bg-black text-white rounded-tl-md rounded-bl-md "
     >
         <MobileSwitch />
     </div>
