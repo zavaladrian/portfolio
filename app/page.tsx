@@ -10,7 +10,7 @@ import { SimpleFloatingNav } from "./components/FloatingNav.tsx/SimpleFloatingNa
 
 export default function Home() {
   return (
-      <div className="">
+      <div>
         <main>
           <SimpleFloatingNav/>
           <FloatingBottomNav />
@@ -19,9 +19,7 @@ export default function Home() {
           <Projects />
           <Experience />
           <Contact />
-          
         </main>
-    
       </div>
   );
 }

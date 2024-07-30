@@ -1,16 +1,10 @@
 'use client'
-import CutoutTextLoader from "./projects/components/ShuffleLoader"
-
+ import ShuffleLoader from "./projects/components/ShuffleLoader"
 
 export default function Loading() {
     return (
-      <div>
-      <CutoutTextLoader
-      height="450px"
-      background="white"
-      // NOTE: Using GIFs for the background looks super cool :)
-      imgUrl= '..public/droid.gif'
-    />
+      <div className="grid h-72 place-content-center bg-neutral-950 p-4">
+      <ShuffleLoader />
     </div>
 )
   }
