@@ -32,7 +32,7 @@ const Hero = () => {
           </Reveal>
           <div className=' flex flex-row space-x-5 my-8 tablet:my-0 tablet:pt-2'>
           <Reveal>
-            <Link href="mailto:adrian@adrianzavala.com">
+            <Link href="mailto:zavaladrian@icloud.com">
             <button className=" font-sans pointer-events-auto mt-4 rounded-lg bg-indigo-500 px-4 py-2 font-medium text-slate-100 transition-all hover:bg-indigo-900 active:scale-95 md:mt-6 text-xl">
               Contact Me
             </button>
