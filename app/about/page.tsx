@@ -10,7 +10,7 @@ import Image from 'next/image';
 const About = () => {
 
   return (
-    <div className='bg-mblue text-pretty '>
+    <div className='bg-mblue dark:bg-black text-pretty '>
     <section id='about' className='section-wrapper'>
     <SectionHeader title="About Me" dir='l' />
     <div className='laptop:grid laptop:grid-cols-[1fr_300px] laptop:gap-[2.4rem] text-center grid-cols-none '>

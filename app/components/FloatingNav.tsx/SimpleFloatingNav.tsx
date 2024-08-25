@@ -26,7 +26,7 @@ const LINKS = [
 
 export const SimpleFloatingNav = () => {
   return (
-    <nav className="fixed left-[50%] top-8  w-fit -translate-x-[50%] items-center gap-6 rounded-2xl border-[1px] border-neutral-700 bg-glacier dark:bg-lavender p-2 text-lg text-neutral-900 z-30 hidden laptop:flex font-serif ">
+    <nav className="fixed left-[50%] top-8  w-fit -translate-x-[50%] items-center gap-6 rounded-2xl border-[1px] border-neutral-700 bg-glacier dark:bg-lavender p-2 text-lg text-neutral-900 z-30 hidden laptop:flex font-playwrite font-bold ">
      {LINKS.map((l, idx) => {
         return(
             <Link href={l.href} key={l.title} >
@@ -49,6 +49,7 @@ const ContactButton = () => {
           relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-lg border-[1px] 
           border-neutral-700 px-4 py-1.5 font-medium
          text-neutral-900 transition-all duration-300
+         font-playwrite
           
           before:absolute before:inset-0
           before:-z-10 before:translate-y-[200%]
