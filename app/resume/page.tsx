@@ -7,7 +7,7 @@ const Resume: React.FC = () => {
     <div className="max-w-4xl mx-auto my-12 p-8 bg-white shadow-lg rounded-lg">
       <h1 className="text-3xl font-bold text-center mb-6">Adrian Zavala</h1>
       <p className="text-center mb-6">
-        <a href="mailto:adrian@adrianzavala.com" className="text-blue-500 underline">adrian@adrianzavala.com</a> | 
+        <a href="mailto:adrian@adrianzavala.com" className="text-blue-500 underline">adrian@zavaladrian.com</a> | 
         <a href="tel:+17087049864" className="text-blue-500 underline ml-2">(708) 704-9864</a> | 
         Summit, IL
       </p>
