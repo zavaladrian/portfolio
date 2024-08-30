@@ -1,72 +1,144 @@
 import React from 'react'
-import { IoArrowBack } from "react-icons/io5";
 import Link from 'next/link';
 
 
-const Resume = () => {
-  
-  
+const Resume: React.FC = () => {
   return (
-    <div className='flex'>
-        <Link href='/'>
-    <IoArrowBack className='text-black text-6xl ml-10 mt-8 hover:text-red-600 '/>
-    </Link>
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 ">
-    <header className="pt-8 text-2xl tablet:text-6xl font-bold pr-3 tablet:pr-0">
-     Adrian Zavala
-    </header>
-    <p className='text-2xl p-2'> Full Stack Developer</p>
-    <main className=" pr-10 tablet:pr-0 space-y-10 text-balance text-center">
-      <section className="mt-5">
-        <h2 className="text-2xl font-semibold mb-2" >Summary</h2>
-        <p >Versatile professional with a strong foundation in web building and maintenance. A driven freelancer, using marketing and design experience to make an impact in web design and web development. A lifelong learner committed to diversifying by developing a wide range of skills to be valuable to any team.</p>
-      </section>
-      <section className="">
-        <h2 className="text-2xl font-bold mb-2">Education</h2>
-        <p>Honors Full Stack Development Certificate</p>
-        <p>Front-End Web Development: React Certificate</p>
-        <p>Front-End Web and Mobile Development: React Native Certificate</p>
-        <p>Front-End Web Development:Bootstrap Certificate</p>
-        <p className='font-semibold'>Nucamp Bootcamp</p>
-        <p>Graduated: November 2023</p>
-      </section>
-      <section className="">
-        <p>Bachelor of Arts in Psychology</p>
-        <p className='font-semibold'>Eastern Illinois Univeristy</p>
-        <p>Graduated: Decemeber 2012</p>
+    <div className="max-w-4xl mx-auto my-12 p-8 bg-white shadow-lg rounded-lg">
+      <h1 className="text-3xl font-bold text-center mb-6">Adrian Zavala</h1>
+      <p className="text-center mb-6">
+        <a href="mailto:adrian@adrianzavala.com" className="text-blue-500 underline">adrian@adrianzavala.com</a> | 
+        <a href="tel:+17087049864" className="text-blue-500 underline ml-2">(708) 704-9864</a> | 
+        Summit, IL
+      </p>
+      <p className="text-center text-blue-500 underline mb-12">
+        <a href="http://adrianzavala.dev" target="_blank" rel="noopener noreferrer">adrianzavala.dev</a>
+      </p>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Objective</h2>
+        <p>
+          Motivated front-end developer with a strong foundation in JavaScript, React, CSS, and Tailwind, complemented by a unique background in restaurant management. Recently completed the Full Stack Honors Certification program at Nucamp, and developed a successful web page for my restaurant, El Faro 2. Eager to leverage my technical skills and management experience in a dynamic development team.
+        </p>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-bold mb-5">Experience</h2>
-        <p className='font-semibold'>Web Developer</p>
-        <p>Responsibilities:</p>
-        <ul className="list-disc list-inside mb-10">
-          <li>Built a site that promotes the restaurant</li>
-          <li>Display menus of multiple restaurants at different locations</li>
-          <li>Use photoshop to alter and display images</li>
-          <li>Testing and debugging code</li>
-        <p> Libraries Used:</p>
-        <ul className=' list-disc list-inside'>
-          <li>React</li>
-          <li>Vite</li>
-          <li>Tailwind</li>
-          <li>Framer Motion</li>
-        </ul>
-        </ul>
-        <p className='font-semibold'>Restaurant Manager</p>
-        <p>El Faro</p>
-        <p>Responsibilities:</p>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
         <ul className="list-disc list-inside">
-          <li>Work and Train employees</li>
-          <li>Collaborating with team members</li>
-          <li>Handle Customer Service</li>
+          <li>Front-end Development: JavaScript, React, HTML5, CSS3, Tailwind CSS, Bootstrap</li>
+          <li>Web Development: Responsive Design, Cross-Browser Compatibility, RESTful APIs, Version Control (Git)</li>
+          <li>UI/UX Design: User-Centered Design, Wire-framing, Prototyping, Accessibility Standards</li>
+          <li>Project Management: Team Leadership, Time Management, Customer Service, Inventory Control</li>
+          <li>Tools: VS Code, Git, GitHub, npm</li>
         </ul>
-
       </section>
-    </main>
-  </div>
-  </div>
-  )
-}
 
-export default Resume
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Experience</h2>
+
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold">El Faro, Riverside, IL</h3>
+          <p className="italic">Restaurant Team Member | June 2009 – November 2019</p>
+          <ul className="list-disc list-inside ml-4">
+            <li>Started as a team member, learning all aspects of restaurant operations, from customer service to inventory management.</li>
+            <li>Contributed to maintaining high standards of food quality and customer satisfaction, resulting in a loyal customer base.</li>
+          </ul>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold">El Faro 2, Riverside, IL</h3>
+          <p className="italic">Restaurant Manager | December 2019 – Present</p>
+          <ul className="list-disc list-inside ml-4">
+            <li>Promoted to manager to lead operations of the newly opened second location, El Faro 2.</li>
+            <li>Successfully expanded the restaurant menu to online delivery for the first time, increasing revenue by 25%.</li>
+            <li>Managed daily operations, including staffing, inventory control, and customer service, leading to a 20% increase in customer satisfaction.</li>
+            <li>Developed and launched both restaurants' first web page, improving online presence and customer engagement.</li>
+            <li>Implemented new systems to streamline workflow and reduce operational costs by 15%.</li>
+            <li>Trained and supervised a team of 15 employees, fostering a collaborative and efficient work environment.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Education</h2>
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold">Nucamp Coding Bootcamp</h3>
+          <p className="italic">Full Stack Honors Certification | Completed: November 2023</p>
+          <ul className="list-disc list-inside ml-4">
+            <li>Comprehensive program covering HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB.</li>
+            <li>Developed multiple projects, including a custom web page for El Faro 2, showcased on <a href="http://adrianzavala.dev" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">adrianzavala.dev</a>.</li>
+          </ul>
+        </div>
+
+        <div className="mb-6">
+          <h3 className="text-xl font-semibold">Eastern Illinois University</h3>
+          <p className="italic">B.A. in Psychology | Completed: Spring 2012</p>
+          <ul className="list-disc list-inside ml-4">
+            <li>Alumni of a music organization called Tau Beta Sigma, which held multiple offices including Vice President of New Membership that held responsibilities of leadership of the chapter.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold">El Faro 2 Website</h3>
+          <ul className="list-disc list-inside ml-4">
+            <li>Developed a responsive and user-friendly website for El Faro 2 using React, Tailwind CSS, and Framer Motion, enhancing the restaurant’s digital footprint and improving customer interaction.</li>
+          </ul>
+        </div>
+
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold">2k-detail Website</h3>
+          <ul className="list-disc list-inside ml-4">
+            <li>Developed a responsive and user-friendly website for a car detailing company using Next.js, Tailwind CSS, Framer Motion, and Emailjs to display the company's services and to submit a form to schedule appointments with their choices of services.</li>
+          </ul>
+        </div>
+
+        <div className="mb-4">
+          <h3 className="text-xl font-semibold">Anime Watchlist</h3>
+          <p className="italic">Full Stack Honors Project - Nucamp Coding Bootcamp</p>
+          <ul className="list-disc list-inside ml-4">
+            <li>Developed a dynamic and interactive Anime Watchlist application using React, Framer Motion, and Tailwind CSS to create a seamless and engaging user interface.</li>
+            <li>Implemented Firebase for authentication, enabling users to create accounts, log in, and manage their personalized watchlists.</li>
+            <li>Utilized Firebase’s real-time database to allow users to save and retrieve their favorite anime shows across sessions.</li>
+            <li>Integrated Framer Motion to add smooth animations and transitions, enhancing the overall user experience.</li>
+            <li>Focused on responsive design to ensure the application works well on both desktop and mobile devices.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
+        <p>Full Stack Honors Certification - Nucamp Coding Bootcamp, November 2023</p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Portfolio</h2>
+        <p>
+          Visit my portfolio at <a href="http://adrianzavala.dev" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">adrianzavala.dev</a> to explore more projects and learn about my work.
+        </p>
+      </section>
+
+      <footer className="text-center">
+        <p className="italic">References available upon request.</p>
+      </footer>
+      <footer className="text-center mt-8">
+        <a
+          href="/Adrian_Zavala_Resume.pdf" 
+          download
+          className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-600 transition-colors"
+        >
+          Download Resume
+        </a>
+        <Link href="/" legacyBehavior>
+          <a className="inline-block bg-gray-500 text-white px-6 py-3 ml-4 rounded-lg shadow hover:bg-gray-600 transition-colors">
+            Back to Homepage
+          </a>
+        </Link>
+      </footer>
+    </div>
+  );
+};
+
+export default Resume;
