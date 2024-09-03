@@ -38,7 +38,7 @@ const Contact = () => {
           <Link href="mailto:zavaladrian@icloud.com">
             <div className="flex items-center justify-center gap-[0.8rem] w-fit text-xl laptop:text-2xl font-semibold font-serif transition-[0.25s] duration-[color] m-auto hover:text-red-500 dark:text-antwhite dark:hover:text-rblue">
               <AiFillMail size="2.4rem" />
-              <span>zavaladrian@icloud.com</span>
+              <span>adrian@zavaladrian.com</span>
             </div>
           </Link> 
           </Reveal>

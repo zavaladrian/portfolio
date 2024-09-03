@@ -14,7 +14,7 @@ const Experience = () => {
     <section className='section-wrapper' id='experience'>
         <SectionHeader title='Recent Projects' dir='r' />
         <Reveal>
-    <div className='grid grid-cols-2 space-y-10'>
+    <div className='grid tablet:grid-cols-2 space-y-10'>
         <div>
             <p className='text-5xl mb-5 underline text-glacier font-serif'>El Faro Resturaunt</p>
             <p className='text-3xl mb-3 text-balance font-serif text-lavender'>Given my background in a family-owned restaurant business, I took the initiative to develop and design a website aimed at showcasing our menu offerings. </p>
@@ -35,7 +35,7 @@ const Experience = () => {
         </div>
         <div>
             <p className='text-5xl mb-5 underline text-glacier font-serif'>2k-Detail</p>
-            <p className='text-3xl mb-3 text-balance font-serif text-lavender'> My friends decided to start a company and I offered my services to buld a better site they originally built from Squared Space.  </p>
+            <p className='text-3xl mb-3 text-balance font-serif text-lavender'> My friends decided to start a company and I offered my services to build a better site they originally built from Squared Space AI.</p>
             <p>
             <Link href="https://www.azprojectcar.cfd/" target='_blank'  rel='noopener noreferrer' prefetch={false} className='text-glacier font-bold text-xl hover:text-rblue hover:underline' >
             https://www.azprojectcar.cfd/
