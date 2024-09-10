@@ -10,12 +10,12 @@ const config: Config = {
   darkMode: ['class', "class"],
   theme: {
   	screens: {
+		smphone: '375px',
   		phone: '425px',
   		tablet: '640px',
   		laptop: '1024px',
   		desktop: '1280px',
   		wide: '1440px',
-  		'4k': '2560px'
   	},
   	extend: {
   		backgroundImage: {

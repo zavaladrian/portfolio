@@ -1,23 +1,21 @@
-'use client'
+"use client";
 import { Dispatch, SetStateAction, useState } from "react";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { IconType } from "react-icons";
-import { SiAboutdotme } from "react-icons/si"
-import { GrProjects, GrContactInfo  } from "react-icons/gr";
-import MobileSwitch from "./LightDarkMobile";
+import { SiAboutdotme } from "react-icons/si";
+import { GrProjects, GrContactInfo } from "react-icons/gr";
+
 import { AiOutlineVerticalAlignTop } from "react-icons/ai";
-
-
 
 const FloatingBottomNav = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className=" bg-glacier dark:bg-lavender z-30 align-top justify-center fixed laptop:hidden -left-3 tablet:left-40 ">
+    <div className=" bg-glacier dark:bg-lavender z-30 align-top justify-center fixed laptop:hidden  tablet:left-40 ">
       <motion.nav
         animate={open ? "open" : "closed"}
         initial="closed"
-        className="bg-glacier dark:bg-lavender  text-black shadow-lg flex items-center justify-between absolute  m-6 p-2 rounded-md"
+        className="bg-glacier dark:bg-lavender  text-black shadow-lg flex justify-center absolute mt-2 smphone:-ml-2 phone:ml-5 rounded-md"
       >
         <MenuButton setOpen={setOpen} open={open} />
         <div className="flex gap-6 px-6 text-2xl">
@@ -26,13 +24,20 @@ const FloatingBottomNav = () => {
           <Link text="Projects" href="#projects" Icon={GrProjects} />
           <Link text="Contact" href="#contact" Icon={GrContactInfo} />
         </div>
-     
       </motion.nav>
     </div>
   );
 };
 
-const Link = ({ text, Icon, href }: { text: string; Icon: IconType; href:string }) => {
+const Link = ({
+  text,
+  Icon,
+  href,
+}: {
+  text: string;
+  Icon: IconType;
+  href: string;
+}) => {
   return (
     <a
       href={href}
@@ -40,7 +45,9 @@ const Link = ({ text, Icon, href }: { text: string; Icon: IconType; href:string 
       className="m-2 hover:text-indigo-500 transition-colors flex flex-col gap-1 items-center"
     >
       <Icon />
-      <span className=" text-base tablet:text-xl font-bold font-mono">{text}</span>
+      <span className=" text-base tablet:text-xl font-bold font-mono">
+        {text}
+      </span>
     </a>
   );
 };
@@ -56,14 +63,8 @@ const MenuButton = ({
     <div
       onClick={() => setOpen((pv) => !pv)}
       className="text-xl font-bold h-full bg-black text-white rounded-tl-md rounded-bl-md "
-    >
-        {/* <MobileSwitch /> */}
-    </div>
+    ></div>
   );
 };
 
-
 export default FloatingBottomNav;
-
-
-

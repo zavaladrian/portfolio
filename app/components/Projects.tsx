@@ -33,7 +33,7 @@ const ProjectSlider = () => {
         <CarouselContent>
           <CarouselItem>
             <div className=" grid grid-rows-1 tablet:grid-cols-2 md:p-10 gap-2">
-              <p className="text-black text-3xl text-balance font-mono">
+              <p className="text-black text-xl laptop:text-3xl text-balance font-serif font-semibold">
                 While I was enrolled in Nucamp Bootcamp, we were expected to do
                 projects along with the learning and I wanted showcase some of
                 them.
@@ -188,7 +188,7 @@ const ProjectSlider = () => {
                     rel="nofollow"
                   >
                     <button className="bg-glacier rounded-2xl p-3 text-rblue hover:bg-mblue hover:text-white ">
-                      <p className="text-2xl font-playwrite font-semibold">
+                      <p className="text-2xl font-semibold">
                         {" "}
                         El Faro Website
                       </p>
@@ -237,7 +237,7 @@ const ProjectSlider = () => {
                     rel="nofollow"
                   >
                     <button className="bg-glacier rounded-2xl p-3 text-rblue hover:bg-mblue hover:text-white ">
-                      <p className="text-2xl font-playwrite font-semibold">
+                      <p className="text-2xl font-semibold">
                         {" "}
                         Car Detail Website
                       </p>
