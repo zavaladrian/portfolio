@@ -24,11 +24,11 @@ const ProjectSlider = () => {
   return (
     <>
       <Carousel
-        // plugins={[
-        //   Autoplay({
-        //     delay: 5000,
-        //   }),
-        // ]}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+          }),
+        ]}
       >
         <CarouselContent>
           <CarouselItem>
