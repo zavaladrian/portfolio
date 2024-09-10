@@ -15,10 +15,10 @@ const FloatingBottomNav = () => {
       <motion.nav
         animate={open ? "open" : "closed"}
         initial="closed"
-        className="bg-glacier dark:bg-lavender  text-black shadow-lg flex justify-center absolute mt-2 smphone:-ml-2 phone:ml-5 rounded-md"
+        className="bg-glacier dark:bg-lavender  text-black shadow-lg flex justify-center absolute mt-2 smphone:ml-3 phone:ml-10 rounded-md"
       >
         <MenuButton setOpen={setOpen} open={open} />
-        <div className="flex gap-6 px-6 text-2xl">
+        <div className="flex gap-6 px-2 text-2xl">
           <Link text="Top" href="#" Icon={AiOutlineVerticalAlignTop} />
           <Link text="About" href="#about" Icon={SiAboutdotme} />
           <Link text="Projects" href="#projects" Icon={GrProjects} />
