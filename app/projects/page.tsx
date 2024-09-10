@@ -12,6 +12,8 @@ import nativeImage from '@/public/native.png';
 import reactImage from '@/public/react.png';
 import watchlistImage from '@/public/watchlist.png';
 
+import ProjectSlider from '../components/Projects';
+
 // Define type for project object
 type Project = {
   id: number;
@@ -54,10 +56,10 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <div className='dark:bg-slate-800 dark:bg-none bg-gradient-to-l from-glacier to-antwhite'>
+    <div className=''>
     <section id='projects' className='section-wrapperp'>
-      <SectionHeader title='Nucamp Projects' dir='l' />
-      <div>
+      <SectionHeader title='Projects' dir='r' />
+      {/* <div>
         <Reveal>
           <div className='tablet:p-2'>
             <p className='text-lg tablet:text-2xl text-pretty font-serif dark:text-antwhite'>While I was enrolled in Nucamp, we were expected to do projects along with the learning and I wanted showcase some of them. </p>
@@ -80,7 +82,8 @@ export default function Projects() {
        <div className=' tablet:hidden'>
         <MobileList />
        </div>   
-      </div>
+      </div> */}
+      <ProjectSlider />
     </section>
     </div>
   );

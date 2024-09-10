@@ -1,7 +1,5 @@
 'use client'
 import React from "react";
-import { motion } from "framer-motion";
-import MobileSwitch from "../mobilenavbar/LightDarkMobile";
 import Link from "next/link";
 import ToggleWrapper from "../toggle/DarkModeToggle";
 
@@ -35,7 +33,7 @@ export const SimpleFloatingNav = () => {
         )
      })}   
       <ContactButton />
-      <ToggleWrapper />
+      {/* <ToggleWrapper /> */}
     </nav>
   );
 };

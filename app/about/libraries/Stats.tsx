@@ -11,8 +11,8 @@ const Stats = () => {
         <Reveal>
         <div>
             <h4 className=' flex items-center mb-[2.4rem]'>
-                <AiFillCode size="2.4rem" className='text-glacier' />
-                <span className='text-xl font-bold relative ml-[0.8rem] text-glacier'>Nucamp Taught Me</span>
+                <AiFillCode size="2.4rem" className='text-black' />
+                <span className='text-xl font-bold relative ml-[0.8rem] text-black'>Nucamp Taught Me</span>
             </h4>
             <div className='flex flex-wrap gap-[1.2rem] mb-[4.8rem] text-rblue font-extrabold'>
                <span className={styles.stats}><p>Javascript</p></span>
@@ -33,8 +33,8 @@ const Stats = () => {
     <Reveal>
         <div>
             <h4 className=' flex items-center mb-[2.4rem]'>
-                <AiFillSmile size="2.4rem" className='text-glacier' />
-                <span className='text-xl font-bold relative ml-[0.8rem] text-glacier'>Self Taught</span>
+                <AiFillSmile size="2.4rem" className='text-black' />
+                <span className='text-xl font-bold relative ml-[0.8rem] text-black'>Self Taught</span>
             </h4>
             <div className='flex flex-wrap gap-[1.2rem] mb-[4.8rem] text-rblue font-extrabold'>
                <span className={styles.stats}><p>NextJs</p></span>

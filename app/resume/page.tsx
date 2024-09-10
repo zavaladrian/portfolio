@@ -7,7 +7,7 @@ const Resume: React.FC = () => {
     <div className="max-w-4xl mx-auto my-12 p-8 bg-white shadow-lg rounded-lg">
       <h1 className="text-3xl font-bold text-center mb-6">Adrian Zavala</h1>
       <p className="text-center mb-6">
-        <a href="mailto:adrian@adrianzavala.com" className="text-blue-500 underline">adrian@zavaladrian.com</a> | 
+        <a href="mailto:adrian@zavaladrian.com" className="text-blue-500 underline">adrian@zavaladrian.com</a> | 
         <a href="tel:+17087049864" className="text-blue-500 underline ml-2">(708) 704-9864</a> 
       </p>
       <p className="text-center text-blue-500 underline mb-12">
@@ -86,7 +86,7 @@ const Resume: React.FC = () => {
           <ul className="list-disc list-inside ml-4">
             <li>Developed a responsive and user-friendly website for a car detailing company using Next.js, Tailwind CSS, Framer Motion, and Emailjs to display the company's services and to submit a form to schedule appointments with their choices of services.</li>
             <li>
-              <span className='font-bold'>Technology used:</span> Nextjs, React, Tailwind CSS, and Framer Motion
+              <span className='font-bold'>Technology used:</span> Nextjs, React, Tailwind CSS, Typescript, and Framer Motion
             </li>
           </ul>
         </div>
@@ -96,7 +96,7 @@ const Resume: React.FC = () => {
           <ul className="list-disc list-inside ml-4">
             <li>Developed a responsive and user-friendly website for El Faro 2 using React, Tailwind CSS, and Framer Motion, enhancing the restaurant’s digital footprint and improving customer interaction.</li>
             <li>
-              <span className='font-bold'>Technology used:</span> Nextjs, React, Tailwind CSS, and Framer Motion
+              <span className='font-bold'>Technology used:</span> Nextjs, React, Tailwind CSS, Typescript, and Framer Motion
             </li>
           </ul>
         </div>

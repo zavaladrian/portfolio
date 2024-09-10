@@ -10,14 +10,14 @@ import { SimpleFloatingNav } from "./components/FloatingNav.tsx/SimpleFloatingNa
 
 export default function Home() {
   return (
-      <div>
+      <div className="bg-gradient-to-b from-black via-antwhite to-mblue dark:bg-dark-gradient">
         <main>
           <SimpleFloatingNav/>
           <FloatingBottomNav />
           <Hero />
           <About />
           <Projects />
-          <Experience />
+          {/* <Experience /> */}
           <Contact />
         </main>
       </div>

@@ -13,14 +13,14 @@ const FloatingBottomNav = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className=" bg-glacier dark:bg-lavender z-30 align-top left-1 justify-center fixed h-screen laptop:hidden tablet:left-48">
+    <div className=" bg-glacier dark:bg-lavender z-30 align-top justify-center fixed laptop:hidden -left-3 tablet:left-40 ">
       <motion.nav
         animate={open ? "open" : "closed"}
         initial="closed"
-        className="bg-glacier dark:bg-lavender  text-black shadow-lg flex items-center justify-between absolute top-8 rounded-md"
+        className="bg-glacier dark:bg-lavender  text-black shadow-lg flex items-center justify-between absolute  m-6 p-2 rounded-md"
       >
         <MenuButton setOpen={setOpen} open={open} />
-        <div className="flex gap-6 px-6">
+        <div className="flex gap-6 px-6 text-2xl">
           <Link text="Top" href="#" Icon={AiOutlineVerticalAlignTop} />
           <Link text="About" href="#about" Icon={SiAboutdotme} />
           <Link text="Projects" href="#projects" Icon={GrProjects} />
@@ -37,10 +37,10 @@ const Link = ({ text, Icon, href }: { text: string; Icon: IconType; href:string 
     <a
       href={href}
       rel="nofollow"
-      className="text-sm w-12 hover:text-indigo-500 transition-colors flex flex-col gap-1 items-center"
+      className="m-2 hover:text-indigo-500 transition-colors flex flex-col gap-1 items-center"
     >
       <Icon />
-      <span className="text-xs">{text}</span>
+      <span className=" text-base tablet:text-xl font-bold font-mono">{text}</span>
     </a>
   );
 };
@@ -57,7 +57,7 @@ const MenuButton = ({
       onClick={() => setOpen((pv) => !pv)}
       className="text-xl font-bold h-full bg-black text-white rounded-tl-md rounded-bl-md "
     >
-        <MobileSwitch />
+        {/* <MobileSwitch /> */}
     </div>
   );
 };

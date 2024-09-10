@@ -10,7 +10,7 @@ import { Reveal } from '@/utils/Reveal'
 
 const Experience = () => {
   return (
-    <div className='bg-mblue dark:bg-black'>
+    <div className=''>
     <section className='section-wrapper' id='experience'>
         <SectionHeader title='Recent Projects' dir='r' />
         <Reveal>
