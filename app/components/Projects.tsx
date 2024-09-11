@@ -236,7 +236,7 @@ const ProjectSlider = () => {
                     target="_blank"
                     rel="nofollow"
                   >
-                    <button className="bg-glacier rounded-2xl p-3 text-rblue hover:bg-mblue hover:text-white ">
+                    <button className="bg-glacier rounded-2xl p-1 tablet:p-2 laptop:p-3 text-rblue hover:bg-mblue hover:text-white ">
                       <p className="text-2xl font-semibold">
                         {" "}
                         Car Detail Website

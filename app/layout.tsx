@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ThemeProvider from "./components/theme-provider";
+
 
 
 
@@ -18,15 +18,9 @@ export default function RootLayout({children}:  RootLayoutProps) {
     <html lang="en" suppressHydrationWarning>
       <head />
       <body>
-        {/* <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        > */}
           {children}
-        {/* </ThemeProvider> */}
       </body>
+      {/* <script src="https://smtpjs.com/v3/smtp.js"></script> */}
     </html>
   </>
   );

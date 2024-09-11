@@ -4,18 +4,17 @@ import { motion } from "framer-motion";
 import { IconType } from "react-icons";
 import { SiAboutdotme } from "react-icons/si";
 import { GrProjects, GrContactInfo } from "react-icons/gr";
-
 import { AiOutlineVerticalAlignTop } from "react-icons/ai";
 
 const FloatingBottomNav = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className=" bg-glacier dark:bg-lavender z-30 align-top justify-center fixed laptop:hidden  tablet:left-40 ">
+    <div className="bg-glacier dark:bg-lavender z-30 fixed top-0 left-1/2 transform -translate-x-1/2 laptop:hidden">
       <motion.nav
         animate={open ? "open" : "closed"}
         initial="closed"
-        className="bg-glacier dark:bg-lavender  text-black shadow-lg flex justify-center absolute mt-2 smphone:ml-3 phone:ml-10 rounded-md"
+        className="bg-glacier dark:bg-lavender text-black shadow-lg flex justify-center rounded-md mt-2"
       >
         <MenuButton setOpen={setOpen} open={open} />
         <div className="flex gap-6 px-2 text-2xl">
@@ -45,7 +44,7 @@ const Link = ({
       className="m-2 hover:text-indigo-500 transition-colors flex flex-col gap-1 items-center"
     >
       <Icon />
-      <span className=" text-base tablet:text-xl font-bold font-mono">
+      <span className="text-base tablet:text-xl font-bold font-mono">
         {text}
       </span>
     </a>
