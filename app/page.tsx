@@ -5,6 +5,7 @@ import Experience from "./experience/page";
 import Projects from "./projects/page";
 import Hero from "./components/hero/Hero"
 import { SimpleFloatingNav } from "./components/FloatingNav.tsx/SimpleFloatingNav";
+import Footer from "./components/Footer";
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
           <Projects />
           {/* <Experience /> */}
           <Contact />
+          <Footer />
         </main>
       </div>
   );

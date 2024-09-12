@@ -27,7 +27,7 @@ export const MyLinks = () => {
         transition={{ duration: 0.5, delay: 0.1 }}
       >
         <Link href="https://www.github.com/zavaladrian" target="_blank" rel="nofollow">
-          <AiFillGithub size="2.4rem"  className="opacity-50  hover:text-rose-700 hover:opacity-100 " />
+          <AiFillGithub size="2.4rem"  className="opacity-50  hover:text-black hover:opacity-100 " />
         </Link>
       </motion.span>
 
@@ -37,7 +37,7 @@ export const MyLinks = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <Link href="https://twitter.com/AdrianZavalaDev" target="_blank" rel="nofollow">
-          <AiFillTwitterCircle size="2.4rem" className="opacity-50 hover:text-sky-500 hover:opacity-100 "/>
+          <AiFillTwitterCircle size="2.4rem" className="opacity-50 hover:text-sky-600 hover:opacity-100 "/>
         </Link>
       </motion.span>
 
@@ -47,7 +47,7 @@ export const MyLinks = () => {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <Link href="https://www.codepen.io/zavaladrian" target="_blank" rel="nofollow">
-          <AiFillCodepenCircle size="2.4rem" className="opacity-50 hover:text-green-600 hover:opacity-100 "/>
+          <AiFillCodepenCircle size="2.4rem" className="opacity-50 hover:text-green-400 hover:opacity-100 "/>
         </Link>
       </motion.span>
     </div>

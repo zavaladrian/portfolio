@@ -3,6 +3,8 @@ import { Reveal } from "@/utils/Reveal";
 import { AiFillMail } from "react-icons/ai";
 import Link from "next/link";
 import { MyLinks } from "../components/MyLinks";
+import Form from "../components/Form";
+
 
 const Contact = () => {
   return (
@@ -14,16 +16,17 @@ const Contact = () => {
               Contact <span className=" text-blue-400">Me.</span>
             </h4>
           </Reveal>
-          <Reveal width="100%">
+           <Form />
+          {/* <Reveal width="100%">
             <p className=" text-center font-semibold text-4xl mx-0 my-[2.4rem] dark:text-antwhite ">
-              Shoot me an email if you want to connect! You can also find me on{" "}
+              You can also find me on{" "}
               <Link
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="nofollow"
                 className="hover:text-blue-200 hover:font-bold text-rblue"
               >
-                Linkedin
+                LinkedIn
               </Link>{" "}
               or{" "}
               <Link
@@ -44,12 +47,12 @@ const Contact = () => {
                 <span>adrian@zavaladrian.com</span>
               </div>
             </Link>
-          </Reveal>
-          <Reveal width="100%">
-            <div className=" mx-16 tablet:mx-60">
+          </Reveal> */}
+          {/* <Reveal width="100%">
+            <div className="mt-5 mx-16 tablet:mx-60">
               <MyLinks />
             </div>
-          </Reveal>
+          </Reveal> */}
           
         </div>
       </section>

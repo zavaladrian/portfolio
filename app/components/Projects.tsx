@@ -129,7 +129,7 @@ const ProjectSlider = () => {
           <CarouselItem>
             <div className=" grid grid-rows-1 tablet:grid-cols-2 md:p-10 gap-2">
               <div>
-                <h1 className="text-3xl text-black laptop:text-glacier font-bold">
+                <h1 className="text-3xl text-black laptop:text-antwhite font-bold">
                   Nucamp Honors Project
                 </h1>
                 <p className="text-black laptop:text-2xl font-semibold mt-5">
@@ -162,6 +162,7 @@ const ProjectSlider = () => {
                 alt="Anime Watchlist"
                 src="/watchlist.png"
                 className="rounded-xl"
+            
               />
               <div></div>
             </div>
@@ -169,7 +170,7 @@ const ProjectSlider = () => {
           <CarouselItem>
             <div className=" grid grid-rows-1 tablet:grid-cols-2 md:p-10 gap-2">
               <div className="text-pretty">
-                <h1 className="text-3xl text-black laptop:text-glacier font-bold">
+                <h1 className="text-3xl text-black laptop:text-antwhite font-bold">
                   El Faro Website
                 </h1>
                 <p className="text-black text-2xl font-semibold mt-5">
@@ -203,6 +204,7 @@ const ProjectSlider = () => {
                   alt="el faro website"
                   src="/aelfaro.png"
                   className="rounded-md pt-5 tablet:pt-0"
+                 
                 />
                 <Image
                   height={100}
@@ -210,6 +212,7 @@ const ProjectSlider = () => {
                   alt="el faro mobile site"
                   src="/afarophone.png"
                   priority={true}
+                  
                   className="border-2 border-black rounded-2xl mx-auto tablet:my-auto absolute laptop:bottom-2 top-20 laptop:top-0 invisible tablet:visible"
                 />
               </div>
@@ -218,7 +221,7 @@ const ProjectSlider = () => {
           <CarouselItem>
             <div className=" grid grid-rows-1 tablet:grid-cols-2 md:p-10 gap-2">
               <div className="text-pretty">
-                <h1 className="text-3xl text-black laptop:text-glacier font-bold">
+                <h1 className="text-3xl text-black laptop:text-antwhite font-bold">
                   2K-Detail Website
                 </h1>
                 <p className="text-black text-2xl font-semibold mt-5">
@@ -251,6 +254,7 @@ const ProjectSlider = () => {
                   width={550}
                   alt="car detail website"
                   src="/cardetail.png"
+                 
                   className="rounded-md pt-5 tablet:pt-0"
                 />
                 <Image
@@ -258,6 +262,7 @@ const ProjectSlider = () => {
                   width={100}
                   alt="car detail mobile"
                   src="/carmobile.png"
+                
                   className="border-2 border-black rounded-2xl mx-auto tablet:my-auto absolute laptop:bottom-2 top-20 laptop:top-0 invisible tablet:visible "
                 />
               </div>
