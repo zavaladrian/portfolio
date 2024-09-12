@@ -20,7 +20,7 @@ const Form = () => {
             Accept: "application/json",
           },
           body: JSON.stringify({
-            access_key: "re_GWwbtTH8_CJA3KdEZt6PJryHP6XkPgnsD",
+            access_key: "b9d6f4cd-1a79-482e-ba3c-b321d9da9ef3",
             name: formData.get("name"),
             email: formData.get("email"),
             message: formData.get("message"),
