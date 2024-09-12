@@ -13,7 +13,7 @@ const Hero = () => {
     </div>
         <div className="pointer-events-none relative ">
           <Reveal>
-            <h1 className="pointer-events-auto text-6xl font-black text-antwhite tablet:text-8xl dark:text-antwhite my-5 tablet:my-0 font-playwrite">
+            <h1 className="pointer-events-auto text-6xl font-black text-antwhite tablet:text-8xl dark:text-antwhite my-5 tablet:my-0 font-serif">
               Hi, I'm Adrian<span className="text-indigo-400">.</span>
             </h1>
           </Reveal>
